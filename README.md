@@ -62,6 +62,17 @@ Before you begin, ensure you have the following installed:
     JWT_SECRET=your_super_secret_key
     ```
 
+## 🗄️ Database Setup (pgAdmin)
+
+To set up the database tables using pgAdmin:
+
+1.  **Open pgAdmin** and connect to your PostgreSQL server.
+2.  **Create a database** named `your_db_name` (as specified in your `.env`).
+3.  **Open Query Tool**: Right-click on your database name and select **'Query Tool'**.
+4.  **Run Schema**: Copy the content from `backend/db/schema.sql`, paste it into the Query Tool, and click the **Execute/Refresh** button (or press `F5`).
+
+This will initialize the `users` and `notes` tables required for the application.
+
 ## 🚀 Running the App
 
 ### Development Mode
